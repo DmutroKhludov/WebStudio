@@ -8,7 +8,7 @@
     --logo-color: #000;
     --secondary-background-color: #2F303A;
 }
-*,
+
  ::after,
  ::before{
     box-sizing:border-box ;
@@ -173,5 +173,8 @@ body{
 }
 .address-text{
     color: var(--primary-background-color);
+}
+.list-title{
+    color: var(--title-text-color);
 }
     
