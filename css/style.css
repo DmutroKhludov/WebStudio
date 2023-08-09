@@ -103,9 +103,10 @@ body{
     text-align: center;
     margin-bottom: 50px;
 }
-.site-link{
+.site-link:not(:last-child){
     text-decoration: none;
     color: var(--title-text-color);
+    margin-right: 50px;
 }
 .site-link:hover,
 .site-link:focus{
@@ -201,4 +202,16 @@ font-weight: 500;
     .activity-list {
         display: flex;
         justify-content: space-between;
+    }
+    .contact-list{
+     display: flex;
+    }
+    .header-list{
+        color: var(--title-text-color);
+        text-decoration: none;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.28px;
+        display: flex;
+
     }
