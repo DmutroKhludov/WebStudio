@@ -107,7 +107,13 @@ body{
     text-decoration: none;
     color: var(--title-text-color);
     margin-right: 50px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.24px;
 }
+
 .site-link:hover,
 .site-link:focus{
     color: var(--background-button-color);
@@ -125,6 +131,7 @@ body{
     font-weight: 400;
     letter-spacing: 0.48px;
     text-align: center;
+    
 }
 .team-card{
     width: 270px;
@@ -132,12 +139,16 @@ body{
     border-radius: 0px 0px 4px 4px;
     padding-bottom: 30px;
 }  
+.team-card:not(:last-child){
+    margin-right: 30px;
+}
 .adress{
     color: var(--second-text-color);
     font-weight: 400;
     line-height: 24px; 
     letter-spacing: 0.42px;
     cursor: pointer;
+
 }
 .email{
     color: var(--primary-text-color);
@@ -145,12 +156,14 @@ body{
     line-height: 24px; 
     letter-spacing: 0.42px;
     cursor: pointer;
+    
 }
 .tel{
     color:rgba(255, 255, 255, 0.60) ;
     font-weight: 400;
     line-height: 24px; 
     letter-spacing: 0.42px;
+    
 }
 .footer-logo{
     font-family: Raleway;
@@ -175,6 +188,7 @@ body{
 }
 .address-text{
     color: var(--primary-background-color);
+   
 }
 .list-title{
     color: var(--title-text-color);
@@ -182,6 +196,7 @@ body{
 .header-wraper{
       display: flex;
       align-items: center;
+      justify-content: space-between;
 }
     .title-portfolio{
         display: none;
@@ -202,8 +217,10 @@ font-weight: 500;
     .activity-list {
         display: flex;
         justify-content: space-between;
+        
     }
     .contact-list{
+        padding-left: 344px;
      display: flex;
     }
     .header-list{
@@ -213,5 +230,22 @@ font-weight: 500;
         line-height: normal;
         letter-spacing: 0.28px;
         display: flex;
-
     }
+    .benefits-block{
+        width:270px;
+    }
+    .benefits-block:not(:last-child){
+        margin-right: 50px;
+    }
+    .benefits-list{
+        display: flex;
+        align-items: flex-start;
+    }
+    .team-list{
+        display: flex;
+        margin-right: 30px;
+    }
+   .footer-contact{
+    display: flex;
+    flex-direction: column;
+   }
