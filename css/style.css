@@ -114,6 +114,7 @@ body{
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.24px;
+   
 }
 
 .site-link:hover,
@@ -223,9 +224,9 @@ body{
         justify-content: space-between;
         
     }
-    .contact-list{
-        padding-left: 344px;
-     display: flex;
+    .contacts-list{
+        padding-left: 344 px;
+        display: flex;
     }
     .header-list {
         color: var(--title-text-color);
