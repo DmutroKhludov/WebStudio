@@ -240,6 +240,8 @@ body{
     }
     .benefits-block{
         width:270px;
+        text-align: center; 
+        position: relative;
     }
     .benefits-block:not(:last-child){
         margin-right: 50px;
@@ -324,6 +326,30 @@ body{
 .header-list li:last-child::after {
     content: none;
 }
+
+
+.background-box {
+    background-color: #F5F4FA; 
+    width: 270px; 
+    height: 120px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 4px;
+}
+
+
+.benefits-image {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+.benefits-name, .benefits-text {
+    text-align: center; 
+    margin-top: 10px;
+}
+
 
 
 
