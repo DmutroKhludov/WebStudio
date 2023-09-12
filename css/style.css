@@ -349,7 +349,14 @@ body{
     text-align: center; 
     margin-top: 10px;
 }
-
+.post-title {
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    color: var(--second-text-color); 
+    padding: 20px; 
+}
 
 
 
