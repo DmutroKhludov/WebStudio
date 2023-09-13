@@ -64,15 +64,26 @@ body{
 }
 /*post*/
 .post{
-  background: var(--secondary-background-color);
+  background-color: var(--secondary-background-color);
+  height: 600px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .post-title{
     color: var(--second-text-color);
-   font-size: 44px;font-weight: 900;
+   font-size: 44px;
+   font-weight: 900;
    line-height: 60px;
    letter-spacing: 2.64px;
    text-align: center;
-   margin-top: 70px;
+   margin-bottom: 30px;
+   text-transform: uppercase;
 }
 .post-button{
     color: var(--second-text-color);
@@ -127,6 +138,7 @@ body{
     font-weight: 500;
     letter-spacing: 0.48px;
     text-align: center;
+    margin-top: 30px;
 }
 .team-position{
     color: var(--primary-text-color);
@@ -142,7 +154,7 @@ body{
     border-radius: 0px 0px 4px 4px;
     padding-bottom: 30px;
 }  
-.team-card:not(:last-child){
+.team-card{
     margin-right: 30px;
 }
 .adress{
@@ -159,6 +171,7 @@ body{
     line-height: 24px; 
     letter-spacing: 0.42px;
     cursor: pointer;
+   margin-right: 50px;
     
 }
 .tel{
@@ -178,7 +191,7 @@ body{
 .activity{
     padding-bottom: 94px;
 }
-.teem{
+.team{
     background-color: var(--background-team-color);
     padding-top: 94px;
     padding-bottom: 94px ;
@@ -325,6 +338,9 @@ body{
 }
 .header-list li:last-child::after {
     content: none;
+}
+.header{
+    margin-bottom: 32px;
 }
 
 
