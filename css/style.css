@@ -60,13 +60,17 @@ body{
     color: var(--title-text-color) ;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: 0.28px;
+    letter-spacing: 0.28px
+}
+.site-nav{
+    width: 281px;
+    margin-left: -150px;
 }
 /*post*/
 .post{
   background-color: var(--secondary-background-color);
   height: 600px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.png);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -108,6 +112,11 @@ body{
     line-height: 24px;
     letter-spacing: 0.42px;
 }
+.benefits{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+}
 .section-title{
     color: var(--title-text-color);
     font-size: 36px;
@@ -139,6 +148,7 @@ body{
     letter-spacing: 0.48px;
     text-align: center;
     margin-top: 30px;
+    margin-bottom: 10px;
 }
 .team-position{
     color: var(--primary-text-color);
@@ -163,16 +173,22 @@ body{
     line-height: 24px; 
     letter-spacing: 0.42px;
     cursor: pointer;
+    
 
 }
-.email{
+.email,
+.footer-email{
     color: var(--primary-text-color);
     font-weight: 400;
     line-height: 24px; 
     letter-spacing: 0.42px;
     cursor: pointer;
    margin-right: 50px;
+   
     
+}
+.footer-email{
+    margin-bottom: 9px;
 }
 .tel{
     color:rgba(255, 255, 255, 0.60) ;
@@ -187,24 +203,27 @@ body{
     font-weight: 700;
     letter-spacing: 0.78px;
     text-decoration: none;
+    margin-bottom: 20px;
 }
 .activity{
     padding-bottom: 94px;
 }
 .team{
     background-color: var(--background-team-color);
-    padding-top: 94px;
+    padding-top: 94px ;
     padding-bottom: 94px ;
 }
 .page-footer{
     background: var(--secondary-background-color);
+    padding-top: 60px;
+    padding-bottom:60px ;
 }
 .white{
     color: var(--second-text-color);
 }
 .address-text{
     color: var(--primary-background-color);
-   
+   margin-bottom: 9px;
 }
 .list-title{
     color: var(--title-text-color);
@@ -248,12 +267,11 @@ body{
         line-height: normal;
         letter-spacing: 0.28px;
         display: flex;
-        padding-right: 10px;
-        
+        justify-content: space-between;
+        width: 281px;
     }
     .benefits-block{
         width:270px;
-        text-align: center; 
         position: relative;
     }
     .benefits-block:not(:last-child){
@@ -273,6 +291,7 @@ body{
    .footer-contact{
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
    }
    .portfolio-flex {
     display: flex;
@@ -331,6 +350,7 @@ body{
 .portfolio-navigation p {
     margin: 0;
 }
+/*
 .header-list li:not(:last-child)::after {
     content: "  "; 
     margin: 50px; 
@@ -339,8 +359,10 @@ body{
 .header-list li:last-child::after {
     content: none;
 }
+*/
 .header{
-    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 
@@ -361,19 +383,8 @@ body{
     left: 50%; 
     transform: translate(-50%, -50%); 
 }
-.benefits-name, .benefits-text {
-    text-align: center; 
+.benefits-name, .benefits-text { 
     margin-top: 10px;
-}
-.post-title {
-    background-image: url(../images/Img\ 76.jpg);
-    width: 1200px;
-    height: 800px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; 
-    color: var(--second-text-color); 
-    padding: 20px; 
 }
 
 
