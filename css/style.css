@@ -7,6 +7,7 @@
     --background-team-color: #F5F4FA;
     --logo-color: #000;
     --secondary-background-color: #2F303A;
+    --svg-color:#AFB1B8;
 }
 
  ::after,
@@ -406,6 +407,34 @@ body{
 .benefits-text {
     text-align: left;
 }
+.contacts-list .site-number:hover{
+    color: var(--background-button-color);
+}
+.site-number:hover .icon-phone{
+    fill: var(--background-button-color);
+}
+.social-list-link:focus,
+.social-list-link:hover{
+    background-color: var(--background-button-color);
+}
+.social-net-list{
+    display: flex
+}
+.social-net-item{
+    margin-left: 17px;
+}
+.social-list-link{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--svg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 
 
 
