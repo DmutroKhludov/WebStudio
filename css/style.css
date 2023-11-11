@@ -432,9 +432,33 @@ body{
     justify-content: center;
     align-items: center;
 }
+.clients-list{
+    display: flex;
+    margin-left: -30px;
+}
+.clients-item{
+    margin-left: 30px;
+}
+.clients-link{
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--svg-color);
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    fill: var(--svg-color);
+}
+.clients-icon{
+    width: 106px;
+    height: 60px;
 
-
-
+}
+.clients-link:hover,
+.clients-link:focus{
+    fill: var(--background-button-color);
+    border-color: var(--background-button-color);
+}
 
 
 
