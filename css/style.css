@@ -459,6 +459,40 @@ body{
     fill: var(--background-button-color);
     border-color: var(--background-button-color);
 }
+.activity {
+    padding-bottom: 94px;
+}
+.sectionTitle {
+    color: var(--title-text-color);
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.activity-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.activity-img {
+    width: 370px;
+    height: 294px;
+}
+.activity-text {
+    position: absolute;
+    text-transform: uppercase;
+    color: var(--primary-background-color);
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.80);
+}
 
 
 
