@@ -493,9 +493,68 @@ body{
     width: 100%;
     background-color: rgba(47, 48, 58, 0.80);
 }
-
-
-
+.backdrop{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: var(--logo-color);
+}
+.backdrop.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 528px;
+    min-height: 581px;
+    background-color: var(--primary-background-color);
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    
+}
+.modal-close-button{
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary-background-color);
+    border: 1px solid var(--logo-color);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-left: 490px;
+    box-sizing: border-box;
+    display: flex;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-position: center;
+    align-items: center;
+}
+.modal-icon{
+    fill: var(--logo-color);
+}
+.modal-icon:hover,
+.model-icon:focus{
+    fill: var(--background-button-color);
+}
+.modal-form{
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+.modal-form-title{
+    text-align: center;
+    font-size: 20px;
+    color: var(--logo-color);
+}
+.modal-form-field{
+    position: relative;
+    margin-bottom: 10px;
+}
 
 
 
