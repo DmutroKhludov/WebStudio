@@ -506,17 +506,18 @@ body{
     visibility: hidden;
     pointer-events: none;
 }
-.modal{
+.modal {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-background-color);
+    min-width: 528px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 528px;
-    min-height: 581px;
-    background-color: var(--primary-background-color);
+    padding: 40px;
     border-radius: 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    
 }
 .modal-close-button{
     width: 30px;
@@ -554,6 +555,40 @@ body{
 .modal-form-field{
     position: relative;
     margin-bottom: 10px;
+}
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+.box-close {
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+}
+.modal-title {
+    color: var(--title-text-color);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-align: center;
 }
 
 
