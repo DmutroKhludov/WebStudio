@@ -8,6 +8,7 @@
     --logo-color: #000;
     --secondary-background-color: #2F303A;
     --svg-color:#AFB1B8;
+
 }
 
  ::after,
@@ -590,6 +591,25 @@ body{
     letter-spacing: 0.6px;
     text-align: center;
 }
+.modal-input {
+    padding-top: 12px;
+     padding-bottom: 12px;
+       padding-left: 42px;
+     margin-top: 4px;
+     border-radius: 4px;
+     border: 1px solid var(--title-text-color);
+     width: 100%;
+     cursor: pointer;
+      transition-property: border;
+     transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ }
+.modal-input:focus-within {
+ border: 1px solid var(--background-button-color);
+}
+ .modal-input:focus-within + .modal-svg {
+  fill: var(--background-button-color);
+   }
 
 
 
