@@ -786,7 +786,20 @@ body{
   .agree-btn:focus {
     background-color: var(--primary--button-color);
   }
-
+.site-link.current::after{
+    content: " ";
+    display: block;
+    background-color: var(--background-button-color);
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -33px;
+  }
+.site-link{
+    position: relative;
+}
 
 
 
