@@ -8,7 +8,7 @@
     --logo-color: #000;
     --secondary-background-color: #2F303A;
     --svg-color:#AFB1B8;
-
+    --time-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
  ::after,
@@ -414,10 +414,16 @@ body{
 .site-number:hover .icon-phone{
     fill: var(--background-button-color);
 }
+.site-number{
+    transition:  color 250ms var(--time-function);
+}
 .social-list-link:focus,
 .social-list-link:hover{
     background-color: var(--background-button-color);
+    fill: var(--primary-background-color)
+    
 }
+
 .social-net-list{
     display: flex
 }
@@ -432,6 +438,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 250ms var(--time-function), fill 250ms var(--time-function);
 }
 .clients-list{
     display: flex;
@@ -449,6 +456,7 @@ body{
     justify-content: center;
     display: flex;
     fill: var(--svg-color);
+    transition: fill 250ms var(--time-function), border-color 250ms var(--time-function);
 }
 .clients-icon{
     width: 106px;
@@ -799,7 +807,35 @@ body{
   }
 .site-link{
     position: relative;
+    transition: color 250ms var(--time-function);
 }
+.prodact-actions{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding: 63px 24px;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    background-color: rgba(33, 150, 243, 0.9);
+    color: var(--primary-background-color);
+    transition: transform 250ms linear, opacity 250ms linear ;
+    opacity: 0;
+    transform: translateY(100%);
+}
+.prodact-tramb{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-link:hover .prodact-actions{
+    transform: translateY(0%);
+    opacity: 1;
+}
+.sn-border-footer{
+    transition: fill 250ms var(--time-function), background-color 250ms var(--time-function);
+}
+
 
 
 
